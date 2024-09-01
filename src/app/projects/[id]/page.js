@@ -13,7 +13,7 @@ export async function generateStaticParams() {
     "https://projectsforportfolio-cd82.restdb.io/rest/projects",
     {
       headers: {
-        "X-Apikey": "66d45387b1ce271d1d4e44e4",
+        "X-Apikey": "66d46681b1ce2734094e47a0",
       },
     }
   ).then((res) => res.json());
@@ -28,7 +28,7 @@ async function fetchData(id) {
     "https://projectsforportfolio-cd82.restdb.io/rest/projects",
     {
       headers: {
-        "X-Apikey": "66d45387b1ce271d1d4e44e4",
+        "X-Apikey": "66d46681b1ce2734094e47a0",
       },
     }
   ).then((res) => res.json());
