@@ -1,0 +1,99 @@
+.header {
+  padding: 40px 0;
+  width: 100%;
+  border-bottom: 2px solid #4a4a4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+  z-index: 3;
+  position: relative;
+}
+
+.header .container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLogo {
+  font-size: 32px;
+  font-weight: 400;
+  color: #da0000;
+}
+
+.headerLogo:hover {
+  text-shadow: 0 0 4px #da0000;
+}
+.headerMenuButton {
+  display: none;
+}
+.checkbox {
+  display: none;
+}
+
+.headerLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.headerLinks a {
+  font-size: 20px;
+}
+
+.headerLinks a:hover {
+  text-decoration: underline;
+}
+
+.headerLanguages {
+  display: flex;
+  gap: 14px;
+}
+
+.headerLanguage {
+  background: none;
+}
+
+.headerLanguage img {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.mobileMenu {
+  background-color: rgb(37, 37, 40);
+  width: 100%;
+  position: absolute;
+  top: -431px;
+  left: 0;
+  gap: 20px;
+  font-weight: 500;
+  font-size: 25px;
+  padding-top: 75px;
+  padding-bottom: 225px;
+  display: none;
+  transition: 0.6s;
+}
+
+.menuCloseButton {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+@media screen and (max-width: 720px) {
+  .headerLinks {
+    display: none;
+  }
+  .headerMenuButton {
+    display: block;
+  }
+  .checkbox:checked ~ .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0px;
+  }
+  .headerMenuButton svg {
+    cursor: pointer;
+  }
+}

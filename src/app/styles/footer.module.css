@@ -1,0 +1,52 @@
+.footer {
+  padding: 35px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #4a4a4a;
+  z-index: 2;
+  background: none;
+  position: relative;
+}
+
+.footer .container {
+  flex-direction: row;
+  gap: 60px;
+  justify-content: center;
+}
+
+.footerButton {
+  padding: 12px;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  background: none;
+  border: 3.5px solid #b70000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerButton:hover {
+  background-color: #b70000;
+  box-shadow: 0 0 15px #b70000;
+}
+
+.footerButton svg path {
+  fill: #b70000;
+}
+
+.footerButton:hover svg path {
+  fill: #fff;
+}
+
+@media screen and (max-width: 720px) {
+  .footer .container {
+    gap: 30px;
+  }
+  .footerButton {
+    width: 45px;
+    height: 45px;
+  }
+}
