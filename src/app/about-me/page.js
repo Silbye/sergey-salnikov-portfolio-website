@@ -3,7 +3,10 @@ export default function AboutMe() {
   return (
     <section className={styles.aboutme}>
       <div className={`${styles.aboutmeContainer} container`}>
-        <img className={styles.aboutmeImage} src="/img/laptop.png"></img>
+        <img
+          className={styles.aboutmeImage}
+          src="https://i.ibb.co/BHJ703z/laptop.png"
+        ></img>
         <div className={styles.aboutmeInfo}>
           <h1>ABOUT ME</h1>
           <h2>Sergey Salnikov - Frontend Developer</h2>

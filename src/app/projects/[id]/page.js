@@ -18,7 +18,6 @@ export async function generateStaticParams() {
     }
   ).then((res) => res.json());
 
-  console.log(res);
   return res?.map((project) => ({
     id: project.id.toString(),
   }));
@@ -35,7 +34,7 @@ async function fetchData(id) {
   ).then((res) => res.json());
 
   let project = res.find((project) => project.id === Number(id));
-
+  console.log(project.img);
   return project;
 }
 

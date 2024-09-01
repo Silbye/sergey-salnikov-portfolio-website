@@ -11,7 +11,7 @@ const ProjectItem = ({ project }) => {
         <div className={styles.projectWrapper}>
           <img
             className={styles.projectImage}
-            src={`/img/${project.id}.png`}
+            src={project.img}
             alt={project.name}
           />
           <div className={styles.projectWrapperSide}>

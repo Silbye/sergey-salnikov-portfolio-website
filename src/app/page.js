@@ -24,8 +24,14 @@ export default function Home() {
           </button>
         </div>
         <div className={styles.homeRightSide}>
-          <img className={styles.homeImage} src="/img/computer.png" />
-          <img className={styles.ImageOnHover} src="/img/loading.png" />
+          <img
+            className={styles.homeImage}
+            src="https://i.ibb.co/gyPt94V/computer.png"
+          />
+          <img
+            className={styles.ImageOnHover}
+            src="https://i.ibb.co/tm9nh7D/loading.png"
+          />
         </div>
       </div>
     </section>

@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
     >
       <img
         className={styles.projectsItemImage}
-        src={`/img/${project.id}.png`}
+        src={project.img}
         alt={project.name}
       />
       <div className={styles.shadow}></div>
