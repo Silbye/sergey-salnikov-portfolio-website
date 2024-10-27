@@ -11,7 +11,7 @@ export default function Home() {
             <b>FRONTEND</b> РАЗРАБОТЧИК
           </h1>
           <a
-            href="https://projectsforportfolio-cd82.restdb.io/media/66df92d269e95800000cbe0c?download=true"
+            href="https://drive.google.com/file/d/1rCDxHd2B8BDGKUM-HnXoXpVgOZM-M-Rh/view?usp=sharing"
             download
             target="_blank"
             className={`${styles.downloadButton} roboto-black`}
