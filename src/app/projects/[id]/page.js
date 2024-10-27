@@ -10,10 +10,10 @@ export async function generateMetadata({ params, searchParams }) {
 
 export async function generateStaticParams() {
   const res = await fetch(
-    "https://projectsforportfolio-cd82.restdb.io/rest/projects",
+    "https://projectsforportfolio-cd82.restdb.io/rest/projectsru",
     {
       headers: {
-        "X-Apikey": "66d46681b1ce2734094e47a0",
+        "X-Apikey": "66dcef06dbf605e962c7168d",
       },
     }
   ).then((res) => res.json());
@@ -25,23 +25,22 @@ export async function generateStaticParams() {
 
 async function fetchData(id) {
   const res = await fetch(
-    "https://projectsforportfolio-cd82.restdb.io/rest/projects",
+    "https://projectsforportfolio-cd82.restdb.io/rest/projectsru",
     {
       headers: {
-        "X-Apikey": "66d46681b1ce2734094e47a0",
+        "X-Apikey": "66dcef06dbf605e962c7168d",
       },
     }
   ).then((res) => res.json());
 
   let project = res.find((project) => project.id === Number(id));
-  console.log(project.img);
-  return project;
+  return { project: project, length: res.length };
 }
 
 const Project = async ({ params }) => {
-  const project = await fetchData(params.id);
+  const data = await fetchData(params.id);
 
-  return <ProjectItem project={project} />;
+  return <ProjectItem project={data.project} length={data.length} />;
 };
 
 export default Project;

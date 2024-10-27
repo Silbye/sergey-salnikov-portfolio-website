@@ -8,21 +8,21 @@ export default function AboutMe() {
           src="https://i.ibb.co/BHJ703z/laptop.png"
         ></img>
         <div className={styles.aboutmeInfo}>
-          <h1>ABOUT ME</h1>
-          <h2>Sergey Salnikov - Frontend Developer</h2>
+          <h1>ОБО МНЕ</h1>
+          <h2>Сергей Сальников - Frontend Разработчик</h2>
           <p>
-            Learning programming for 2 years now. <br />
+            Изучаю программирование уже 2 года. <br />
             <br />
-            Studying in the Moscow University of Finance and Law MFUA. Completed
-            the "Developer - Frontend development" course on the GeekBrains
-            platform. <br />
+            Учусь в Московском финансово-юридическом университете МФЮА. Закончил
+            курс "Разработчик - Frontend разработка" на платформе GeekBrains.
             <br />
-            My hobbies include playing videogames, watching various sports,
-            creating videos on YouTube.
+            <br />
+            Люблю играть в видеоигры, смотреть различные спортивные
+            соревнования, и иногда выкладывать ролики на YouTube.
           </p>
           <h3>
-            Skills: HTML, CSS, JS, Vue.JS, REST API, Photoshop, Figma, Git,
-            GitHub
+            Навыки: HTML, CSS, SCSS, JS, Vue.JS, React.JS, Next.JS, REST API,
+            Photoshop, Figma, Git, GitHub, Docker
           </h3>
         </div>
       </div>

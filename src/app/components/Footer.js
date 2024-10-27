@@ -4,7 +4,11 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={`${styles.container} container`}>
-        <a href="https://t.me/sealthebee" className={styles.footerButton}>
+        <a
+          href="https://t.me/sealthebee"
+          target="_blank"
+          className={styles.footerButton}
+        >
           <svg
             width="29"
             height="24"
@@ -20,6 +24,7 @@ const Footer = () => {
         </a>
         <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=sergey.salnikov46@gmail.com"
+          target="_blank"
           className={styles.footerButton}
         >
           <svg
@@ -58,7 +63,11 @@ const Footer = () => {
             </defs>
           </svg>
         </a>
-        <a href="https://github.com/Silbye" className={styles.footerButton}>
+        <a
+          href="https://github.com/Silbye"
+          target="_blank"
+          className={styles.footerButton}
+        >
           <svg
             width="31"
             height="31"
@@ -74,6 +83,7 @@ const Footer = () => {
         </a>
         <a
           href="https://hh.ru/resume/8d1f3fbeff0cac1ef20039ed1f5563706a7746"
+          target="_blank"
           className={styles.footerButton}
         >
           <svg

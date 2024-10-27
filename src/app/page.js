@@ -14,14 +14,16 @@ export default function Home() {
       <div className={`${styles.container} container`}>
         <div className={styles.homeLeftSide}>
           <h1 className={`roboto-black`}>
-            <b>FRONTEND</b> DEVELOPER
+            <b>FRONTEND</b> РАЗРАБОТЧИК
           </h1>
-          <button
-            onClick={() => download(fileUrl, filename)}
+          <a
+            href="https://projectsforportfolio-cd82.restdb.io/media/cv.pdf"
+            download
+            target="_blank"
             className={`${styles.downloadButton} roboto-black`}
           >
-            Download CV
-          </button>
+            Скачать резюме
+          </a>
         </div>
         <div className={styles.homeRightSide}>
           <img

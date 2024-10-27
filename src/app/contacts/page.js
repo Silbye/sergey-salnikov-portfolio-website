@@ -4,10 +4,10 @@ export default function Contacts() {
   return (
     <section className={styles.contacts}>
       <div className={`${styles.contactsContainer} container`}>
-        <h1 className={styles.contactsHeader}>Contacts</h1>
+        <h1 className={styles.contactsHeader}>Контакты</h1>
         <ul className={styles.contactsList}>
           <li className={styles.contact}>
-            <h1 className={styles.contactHeader}>Phone number:</h1>
+            <h1 className={styles.contactHeader}>Телефон:</h1>
             <p className={styles.contactData}>+7(968)-486-04-77</p>
           </li>
           <li className={styles.contact}>

@@ -3,20 +3,20 @@ import ProjectCard from "@/app/components/ProjectCard";
 
 export default async function Projects() {
   const res = await fetch(
-    "https://projectsforportfolio-cd82.restdb.io/rest/projects",
+    "https://projectsforportfolio-cd82.restdb.io/rest/projectsru",
     {
       headers: {
-        "X-Apikey": "66d46681b1ce2734094e47a0",
+        "X-Apikey": "66dcef06dbf605e962c7168d",
       },
     }
   ).then((res) => res.json());
 
-  const projects = res;
+  const projects = res.sort((a, b) => a.id - b.id);
 
   return (
     <section className={styles.projects}>
       <div className={`${styles.projectsContainer} container`}>
-        <h1 className={styles.projectsHeader}>Projects</h1>
+        <h1 className={styles.projectsHeader}>Проекты</h1>
         <div className={styles.projectsItems}>
           {projects.map((element) => (
             <ProjectCard project={element} />

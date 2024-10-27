@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://silbye.github.io/sergey-salnikov-portfolio-website/
+
+# Sitemaps
+Sitemap: https://silbye.github.io/sergey-salnikov-portfolio-website/sitemap.xml

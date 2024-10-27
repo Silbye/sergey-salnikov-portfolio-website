@@ -3,21 +3,51 @@
 import Link from "next/link";
 import styles from "../styles/project.module.css";
 
-const ProjectItem = ({ project }) => {
+function checkBack(id) {
+  if (id > 0) {
+    return (
+      <Link href={`/projects/` + (id - 1)} className={styles.goBack}>
+        предыдущий проект
+      </Link>
+    );
+  }
+}
+
+function checkForward(id, length) {
+  if (id < length - 1) {
+    return (
+      <Link href={`/projects/` + (id + 1)} className={styles.goForward}>
+        следующий проект
+      </Link>
+    );
+  }
+}
+
+const ProjectItem = ({ project, length }) => {
   return (
     <section className={styles.project}>
+      {checkBack(project.id)}
       <div className={`${styles.projectContainer} container`}>
         <h1 className={styles.projectTitle}>{project.name}</h1>
         <div className={styles.projectWrapper}>
-          <img
+          <a
             className={styles.projectImage}
-            src={project.img}
-            alt={project.name}
-          />
+            href={project.site_link}
+            target="_blank"
+          >
+            <img
+              className={styles.projectImage}
+              src={project.img}
+              alt={project.name}
+            />
+            <div className={styles.projectImageHover}>
+              <p>Сайт</p>
+            </div>
+          </a>
           <div className={styles.projectWrapperSide}>
             <p className={styles.projectDescr}>{project.desc}</p>
             <Link className={styles.projectLink} href={project.link}>
-              GitHub repo{" "}
+              Код на GitHub{" "}
               <svg
                 width="31"
                 height="31"
@@ -33,8 +63,9 @@ const ProjectItem = ({ project }) => {
             </Link>
           </div>
         </div>
-        <h2 className={styles.projectStack}>Stack: {project.stack}</h2>
+        <h2 className={styles.projectStack}>Стек: {project.stack}</h2>
       </div>
+      {checkForward(project.id, length)}
     </section>
   );
 };

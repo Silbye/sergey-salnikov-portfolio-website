@@ -6,7 +6,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={`${styles.container} container`}>
         <Link className={`${styles.headerLogo} roboto-black`} href="/">
-          Sergey Salnikov
+          Сергей Сальников
         </Link>
         <div className={styles.headerMenuButton}>
           <label for="check">
@@ -48,24 +48,24 @@ const Header = () => {
             </svg>
           </label>
           <li>
-            <Link href="/about-me">About me</Link>
+            <Link href="/about-me">Обо мне</Link>
           </li>
           <li>
-            <Link href="/projects">Projects</Link>
+            <Link href="/projects">Проекты</Link>
           </li>
           <li>
-            <Link href="/contacts">Contacts</Link>
+            <Link href="/contacts">Контакты</Link>
           </li>
         </ul>
         <ul className={`${styles.headerLinks} roboto-medium`}>
           <li>
-            <Link href="/about-me">About me</Link>
+            <Link href="/about-me">Обо мне</Link>
           </li>
           <li>
-            <Link href="/projects">Projects</Link>
+            <Link href="/projects">Проекты</Link>
           </li>
           <li>
-            <Link href="/contacts">Contacts</Link>
+            <Link href="/contacts">Контакты</Link>
           </li>
         </ul>
       </div>

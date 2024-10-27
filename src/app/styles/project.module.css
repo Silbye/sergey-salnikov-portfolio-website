@@ -23,8 +23,36 @@
 
 .projectImage {
   height: 330px;
-  filter: drop-shadow(0 0 5px #000);
   border-radius: 10px;
+  position: relative;
+}
+
+.projectImage img {
+  filter: drop-shadow(0 0 5px #000);
+  transition: 0.5s ease;
+}
+
+.projectImageHover {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 20px 50px;
+}
+
+.projectImage:hover img {
+  opacity: 0.5;
+}
+
+.projectImage:hover .projectImageHover {
+  opacity: 1;
 }
 
 .projectWrapperSide {
@@ -68,6 +96,22 @@
 .projectStack {
   font-size: 32px;
   font-weight: 700;
+}
+
+.goBack,
+.goForward {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.goBack {
+  left: 8%;
+}
+
+.goForward {
+  left: 92%;
 }
 
 @media screen and (max-width: 1024px) {
