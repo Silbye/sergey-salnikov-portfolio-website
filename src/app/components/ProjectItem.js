@@ -1,13 +1,17 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/project.module.css";
+
+import arrowleft from "../../../public/icons/arrowleft.svg";
+import arrowright from "../../../public/icons/arrowright.svg";
 
 function checkBack(id) {
   if (id > 0) {
     return (
       <Link href={`/projects/` + (id - 1)} className={styles.goBack}>
-        предыдущий проект
+        <Image src={arrowleft} alt="Previous" />
       </Link>
     );
   }
@@ -17,7 +21,7 @@ function checkForward(id, length) {
   if (id < length - 1) {
     return (
       <Link href={`/projects/` + (id + 1)} className={styles.goForward}>
-        следующий проект
+        <Image src={arrowright} alt="Next" />
       </Link>
     );
   }

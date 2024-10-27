@@ -1,6 +1,11 @@
 import styles from "../styles/projects.module.css";
 import ProjectCard from "@/app/components/ProjectCard";
 
+export const metadata = {
+  title: "Проекты",
+  description: "Список моих проектов",
+};
+
 export default async function Projects() {
   const res = await fetch(
     "https://projectsforportfolio-cd82.restdb.io/rest/projectsru",

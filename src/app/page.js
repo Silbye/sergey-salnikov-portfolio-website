@@ -1,14 +1,8 @@
 "use client";
 
 import styles from "./page.module.css";
-import useDownloader from "react-use-downloader";
 
 export default function Home() {
-  const { download } = useDownloader();
-
-  const fileUrl = "/cv.pdf";
-  const filename = "cv.pdf";
-
   return (
     <section className={styles.home}>
       <div className={`${styles.container} container`}>
@@ -17,7 +11,7 @@ export default function Home() {
             <b>FRONTEND</b> РАЗРАБОТЧИК
           </h1>
           <a
-            href="https://projectsforportfolio-cd82.restdb.io/media/cv.pdf"
+            href="https://projectsforportfolio-cd82.restdb.io/media/66df92d269e95800000cbe0c?download=true"
             download
             target="_blank"
             className={`${styles.downloadButton} roboto-black`}

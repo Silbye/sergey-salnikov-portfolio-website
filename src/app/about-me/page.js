@@ -1,4 +1,9 @@
 import styles from "../styles/aboutme.module.css";
+
+export const metadata = {
+  title: "Обо мнек",
+};
+
 export default function AboutMe() {
   return (
     <section className={styles.aboutme}>

@@ -7,8 +7,14 @@ import Background from "./components/Background";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Sergey Salnikov Portfolio",
-  description: "Frontend developer portfolio website",
+  metadataBase: new URL(
+    "https://silbye.github.io/sergey-salnikov-portfolio-website/"
+  ),
+  title: "Сергей Сальников - Frontend разработчик",
+  description: "Сайт-портфолио Frontend разработчика",
+  alternates: {
+    canonical: "./",
+  },
 };
 
 export default function RootLayout({ children }) {
