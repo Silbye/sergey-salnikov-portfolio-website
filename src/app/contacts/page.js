@@ -2,7 +2,6 @@ import styles from "../styles/contacts.module.css";
 
 export const metadata = {
   title: "Контакты",
-  description: "Мои контакты",
 };
 
 export default function Contacts() {

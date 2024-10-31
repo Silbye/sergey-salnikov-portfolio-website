@@ -1,7 +1,7 @@
 import styles from "../styles/aboutme.module.css";
 
 export const metadata = {
-  title: "Обо мнек",
+  title: "Обо мне",
 };
 
 export default function AboutMe() {
@@ -23,11 +23,11 @@ export default function AboutMe() {
             <br />
             <br />
             Люблю играть в видеоигры, смотреть различные спортивные
-            соревнования, и иногда выкладывать ролики на YouTube.
+            соревнования, и выкладывать ролики на YouTube.
           </p>
           <h3>
-            Навыки: HTML, CSS, SCSS, JS, Vue.JS, React.JS, Next.JS, REST API,
-            Photoshop, Figma, Git, GitHub, Docker
+            Навыки: HTML, CSS, SCSS, JavaScript, TypeScript, Vue.JS, React.JS,
+            Next.JS, REST API, Photoshop, Figma, Git, GitHub, Docker
           </h3>
         </div>
       </div>

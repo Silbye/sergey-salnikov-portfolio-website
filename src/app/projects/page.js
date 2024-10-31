@@ -3,7 +3,6 @@ import ProjectCard from "@/app/components/ProjectCard";
 
 export const metadata = {
   title: "Проекты",
-  description: "Список моих проектов",
 };
 
 export default async function Projects() {
@@ -11,7 +10,7 @@ export default async function Projects() {
     "https://projectsforportfolio-cd82.restdb.io/rest/projectsru",
     {
       headers: {
-        "X-Apikey": "66dcef06dbf605e962c7168d",
+        "X-Apikey": "6722cf095c99dc22289ca821",
       },
     }
   ).then((res) => res.json());
