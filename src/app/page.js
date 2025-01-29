@@ -11,7 +11,7 @@ export default function Home() {
             <b>FRONTEND</b> РАЗРАБОТЧИК
           </h1>
           <a
-            href="https://drive.google.com/file/d/1rCDxHd2B8BDGKUM-HnXoXpVgOZM-M-Rh/view?usp=sharing"
+            href="https://drive.google.com/file/d/1h6giRzmOjV8a7Fz-o9x3bxy4clK5o34c/view?usp=sharing"
             download
             target="_blank"
             className={`${styles.downloadButton} roboto-black`}

@@ -31,6 +31,9 @@ export default function AboutMe() {
           </h3>
         </div>
       </div>
+      <div className={styles.aboutme__certificate}>
+        <img src="certificate.png" />
+      </div>
     </section>
   );
 }
